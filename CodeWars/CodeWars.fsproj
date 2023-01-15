@@ -7,6 +7,7 @@
 
   <ItemGroup>
     <Compile Include="Tribonacci.fs" />
+    <Compile Include="DuplicateCount.fs" />
   </ItemGroup>
 
 </Project>

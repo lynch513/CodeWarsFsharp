@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Compile Include="TribonacciTests.fs" />
+    <Compile Include="DuplicateCountTests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
