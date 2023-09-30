@@ -4,7 +4,8 @@ open NUnit.Framework
 open FsUnit
 open CodeWars.DuplicateCount
 
-let lowercase, uppercase = "abcdefghijklmnopqrstuvwxyz", "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let lowercase = "abcdefghijklmnopqrstuvwxyz"
+let uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 let duplicateCountTestCases =
     seq {
@@ -19,7 +20,7 @@ let duplicateCountTestCases =
         yield TestCaseData(lowercase + uppercase, 26)
     }
 
-[<TestCaseSource("duplicateCountTestCases")>]
+[<TestCaseSource(nameof(duplicateCountTestCases))>]
 let ``Should equal to`` (input: string, expected: int) =
     let actual = duplicateCount input
     actual |> should equal expected
