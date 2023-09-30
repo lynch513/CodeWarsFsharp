@@ -16,7 +16,7 @@ let tribonacciTestCases =
         yield TestCaseData([300; 200; 100], 0, List.empty<int>)
     }
 
-[<TestCaseSource("tribonacciTestCases")>]
+[<TestCaseSource(nameof(tribonacciTestCases))>]
 let ``Should equal to`` (input: int list, n: int, expected: int list) =
     let actual = tribonacci input n
     actual |> should equal expected
