@@ -8,6 +8,7 @@
     <Compile Include="TribonacciTests.fs" />
     <Compile Include="DuplicateCountTests.fs" />
     <Compile Include="BingoCardsTests.fs" />
+    <Compile Include="FakeBinaryTests.fs" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FsUnit" Version="5.4.0" />

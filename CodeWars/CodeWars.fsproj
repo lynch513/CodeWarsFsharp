@@ -7,5 +7,6 @@
     <Compile Include="BingoCards.fs" />
     <Compile Include="Tribonacci.fs" />
     <Compile Include="DuplicateCount.fs" />
+    <Compile Include="FakeBinary.fs" />
   </ItemGroup>
 </Project>

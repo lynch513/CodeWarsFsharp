@@ -20,6 +20,16 @@ let duplicateCountTestCases =
         yield TestCaseData(lowercase + uppercase, 26)
     }
 
+let testTestCases =
+    seq {
+        yield TestCaseData(true)
+    }
+
+[<TestCaseSource(nameof(testTestCases))>]
+let ``Should be true`` (input: bool) =
+    true |> should equal true
+
+
 [<TestCaseSource(nameof(duplicateCountTestCases))>]
 let ``Should equal to`` (input: string, expected: int) =
     let actual = duplicateCount input
